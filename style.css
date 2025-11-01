@@ -1,0 +1,285 @@
+/* estilos.css */
+@media (max-width: 768px) {
+  .acerca .contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .acerca .imagen img {
+    max-width: 100%;
+  }
+}
+
+
+/* 
+-----------------------------------------------------------------------------------------------------------------------------------
+                                                General Styles
+-----------------------------------------------------------------------------------------------------------------------------------
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+section {
+  margin-bottom: 30rem; /* espacio entre secciones */
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  scroll-margin-top: 80px; /* ajusta según el alto de tu navbar */
+}
+
+h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+/* 
+-----------------------------------------------------------------------------------------------------------------------------------
+                                                Contenedor de la barra superior 
+-----------------------------------------------------------------------------------------------------------------------------------
+*/
+
+/* Barra superior */
+.barra-superior {
+  position: sticky;
+  top: 10px;
+  background-color: #fff;
+  padding: 1rem;
+  z-index: 100;
+  width: 40%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  
+  margin: 10px auto;
+  border-radius: 999px;
+  
+  display: flex; /* Usamos flexbox para centrar el contenido */
+  justify-content: center;
+}
+
+/* Navegación centrada */
+.navegacion ul {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Botones estilo pill */
+.navegacion a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+  background-color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+  
+   font-size: auto;
+}
+
+/* Hover y activo */
+.navegacion a:hover {
+  background-color: #fbfbfb;
+  color: #000;
+}
+
+.navegacion a.activo {
+  background-color: #000;
+  color: #fff;
+}
+
+/* 
+-----------------------------------------------------------------------------------------------------------------------------------
+                                                Contenedor de Hero Section
+-----------------------------------------------------------------------------------------------------------------------------------
+*/
+
+
+.textoHero {
+  flex-grow: 1;
+  flex-shrink: 1;
+  max-width: 800px;
+}
+
+.textoHero h2 mark {
+  background-color: #fafafa;
+  font-size: 3rem;
+}
+
+/* texto sobre mi*/
+.lista-info {
+  list-style-type: none; /* quita los puntos */
+  padding: 1rem;
+  margin: 2rem 0;
+  background-color: #fafafa;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-left: 50px;
+}
+
+.lista-info li {
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  color: #444;
+  line-height: 1;
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.lista-info li::before {
+  content: "🎮 ";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.lista-info a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.lista-info a:hover {
+  text-decoration: underline;
+}
+
+/* imagen Hero*/
+.imagenHero img {
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow:rgba(0,0,0,0.2);
+  margin-right: 150px;
+}
+
+/* Botones */
+.botones {
+  margin-top: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  margin-right: 1rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.btn.negro {
+  background-color: #333;
+}
+
+.btn.negro:hover {
+  background-color: #000;
+}
+
+/* 
+-----------------------------------------------------------------------------------------------------------------------------------
+                                                Contenedor de Acerca de mi Section
+-----------------------------------------------------------------------------------------------------------------------------------
+*/
+
+/* imagen Hero*/
+.imagenAcerca img {
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow:rgba(0,0,0,0.2);
+  margin-left: 250px;
+
+  height: auto;
+}
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 2rem;
+  
+}
+.textoAcerca {
+  display: inline-block;
+  margin-left: 100px ;
+  max-width: 700px;
+  color: #555;
+  transition: transform 0.4s ease, color 0.3s ease;
+}
+
+#animation1:hover  {
+  transform: translateX(10px);
+  color: #000;
+}
+#animation2:hover  {
+  transform: translateX(10px);
+  color: #000;
+}
+
+.textoAcerca h2 mark {
+  background-color: #fafafa;
+  font-size: 3rem;
+}
+
+.textoAcerca h3 {
+  background-color: #fafafa;
+  font-size: 3rem;
+}
+
+.textoAcerca p {
+  background-color: #fafafa;
+  font-size: 1.4rem;
+}
+/*
+.imagenAcerca img {
+  max-width: 600px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow:rgba(0,0,0,0.2);
+  margin-left: 250px;
+}
+
+/* texto Acerca de mi*/
+
+/*
+.textoAcerca {
+  padding: 1rem;
+  margin: 2rem 0;
+  margin-left: 50px;
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  color: #444;
+  line-height: 1;
+  position: relative;
+  padding-left: 2.5rem;
+  
+  max-width: 600px;
+}
+
+.textoAcerca {
+  flex: 1;
+  max-width: 800px;
+}
+
+.textoAcerca h1 {
+  
+  font-size: 5rem;
+}
+
+.textoAcerca h2 mark {
+  background-color: #fafafa;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+   font-size: 3rem;
+}
+*/
